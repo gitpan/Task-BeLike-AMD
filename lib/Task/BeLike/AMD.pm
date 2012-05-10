@@ -6,7 +6,7 @@ BEGIN {
   $Task::BeLike::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Task::BeLike::AMD::VERSION = '0.001';
+  $Task::BeLike::AMD::VERSION = '0.002';
 }
 # ABSTRACT: Modules AMD uses
 
@@ -22,7 +22,7 @@ Task::BeLike::AMD - Modules AMD uses
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 TASK CONTENTS
 
@@ -30,15 +30,11 @@ version 0.001
 
 =head3 L<App::Ack>
 
-=head3 L<App::Metabase::Relayd>
-
 =head3 L<App::Nopaste>
 
 =head3 L<App::Software::License>
 
 =head3 L<App::cpanminus>
-
-=head3 L<App::cpanoutdated>
 
 =head3 L<CPAN::Mini>
 
@@ -48,21 +44,11 @@ version 0.001
 
 =head2 Optional Dependencies Of Other Modules
 
-=head3 L<CPAN::Reporter>
-
-=head3 L<PadWalker>
-
 =head3 L<Task::SDK::Moose>
 
 =head3 L<Term::ReadLine::Gnu>
 
-=head3 L<Test::Reporter>
-
-=head3 L<Test::Reporter::Transport::Socket>
-
 =head2 Development Tools
-
-=head3 L<Acme::MetaSyntactic>
 
 =head3 L<Carp::Always>
 
@@ -82,10 +68,6 @@ version 0.001
 
 =head3 L<Dist::Zilla::App::Command::weaverconf>
 
-=head3 L<Gitalist>
-
-=head3 L<Module::CPANTS::Analyse>
-
 =head3 L<Module::Install> 0.95
 
 =head3 L<Module::Install::AuthorRequires>
@@ -95,8 +77,6 @@ version 0.001
 =head3 L<Module::Install::CheckConflicts>
 
 =head3 L<Module::Install::ExtraTests>
-
-=head3 L<Perl::Tidy>
 
 =head3 L<Perl::Version> 1.010
 
@@ -114,11 +94,9 @@ version 0.001
 
 =head2 Modules I use a lot
 
-=head3 L<aliased>
-
 =head3 L<App::Cmd>
 
-=head3 L<Bundle::CPANxxl>
+=head3 L<Bundle::CPAN>
 
 =head3 L<Bundle::libnet>
 
@@ -127,8 +105,6 @@ version 0.001
 =head3 L<Cache::Cache>
 
 =head3 L<Cache::FileCache>
-
-=head3 L<Catalyst::Model::KiokuDB>
 
 =head3 L<Data::DPath>
 
@@ -248,10 +224,6 @@ version 0.001
 
 =head3 L<Regexp::Common>
 
-=head3 L<RPC::XML>
-
-=head3 L<RPC::XML::Server>
-
 =head3 L<SQL::Translator>
 
 =head3 L<String::Diff>
@@ -265,10 +237,6 @@ version 0.001
 =head3 L<TAP::Parser::Aggregator>
 
 =head3 L<Task::Catalyst>
-
-=head3 L<Task::KiokuDB>
-
-=head3 L<Task::Plack>
 
 =head3 L<Template>
 
