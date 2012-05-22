@@ -29,6 +29,7 @@
             "Bundle::CPAN" : "0",
             "Bundle::LWP" : "0",
             "Bundle::libnet" : "0",
+            "CHI" : "0",
             "CPAN::Mini" : "0",
             "CPAN::Mini::Devel" : "0",
             "CPAN::Uploader" : "0",
@@ -60,7 +61,6 @@
             "Digest::SHA1" : "0",
             "Directory::Scratch" : "0",
             "Dist::Zilla" : "0",
-            "Dist::Zilla::App::Command::weaverconf" : "0",
             "Dist::Zilla::PluginBundle::AMD" : "0",
             "File::ShareDir" : "0",
             "File::Slurp" : "0",
@@ -107,6 +107,7 @@
             "Parse::RecDescent" : "0",
             "Perl::Version" : "1.010",
             "Pod::Coverage::TrustPod" : "0",
+            "Pod::Weaver::PluginBundle::AMD" : "0",
             "Regexp::Common" : "0",
             "SQL::Translator" : "0",
             "String::Diff" : "0",
@@ -115,6 +116,7 @@
             "TAP::Formatter::HTML" : "0",
             "TAP::Parser::Aggregator" : "0",
             "Task::Catalyst" : "0",
+            "Task::Pinto" : "0",
             "Task::SDK::Moose" : "0",
             "Template" : "0",
             "Term::ReadLine::Gnu" : "0",
@@ -126,7 +128,6 @@
             "Test::Pod" : "0",
             "Test::Pod::Coverage" : "0",
             "Test::WWW::Mechanize::Catalyst" : "0",
-            "Test::Without::Module" : "0",
             "TryCatch" : "0",
             "URI" : "0",
             "URI::Escape" : "0",
@@ -159,7 +160,7 @@
          "web" : "http://github.com/amd/Task-BeLike-AMD"
       }
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

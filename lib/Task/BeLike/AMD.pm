@@ -6,7 +6,7 @@ BEGIN {
   $Task::BeLike::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Task::BeLike::AMD::VERSION = '0.002';
+  $Task::BeLike::AMD::VERSION = '0.003';
 }
 # ABSTRACT: Modules AMD uses
 
@@ -22,7 +22,7 @@ Task::BeLike::AMD - Modules AMD uses
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 TASK CONTENTS
 
@@ -66,7 +66,7 @@ version 0.002
 
 =head3 L<Dist::Zilla::PluginBundle::AMD>
 
-=head3 L<Dist::Zilla::App::Command::weaverconf>
+=head3 L<Pod::Weaver::PluginBundle::AMD>
 
 =head3 L<Module::Install> 0.95
 
@@ -88,9 +88,9 @@ version 0.002
 
 =head3 L<Test::Pod::Coverage>
 
-=head3 L<Test::Without::Module>
-
 =head3 L<V>
+
+=head3 L<Task::Pinto>
 
 =head2 Modules I use a lot
 
@@ -101,6 +101,8 @@ version 0.002
 =head3 L<Bundle::libnet>
 
 =head3 L<Bundle::LWP>
+
+=head3 L<CHI>
 
 =head3 L<Cache::Cache>
 
