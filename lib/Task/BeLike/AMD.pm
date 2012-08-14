@@ -2,11 +2,13 @@ use strict;
 use warnings;
 
 package Task::BeLike::AMD;
+# git description: v0.003-3-g0e8b077
+
 BEGIN {
   $Task::BeLike::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Task::BeLike::AMD::VERSION = '0.003';
+  $Task::BeLike::AMD::VERSION = '0.004';
 }
 # ABSTRACT: Modules AMD uses
 
@@ -22,7 +24,7 @@ Task::BeLike::AMD - Modules AMD uses
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 TASK CONTENTS
 
@@ -50,6 +52,8 @@ version 0.003
 
 =head2 Development Tools
 
+=head3 L<bareword::filehandles>
+
 =head3 L<Carp::Always>
 
 =head3 L<Carp::Always::Color>
@@ -66,7 +70,7 @@ version 0.003
 
 =head3 L<Dist::Zilla::PluginBundle::AMD>
 
-=head3 L<Pod::Weaver::PluginBundle::AMD>
+=head3 L<indirect>
 
 =head3 L<Module::Install> 0.95
 
@@ -78,9 +82,13 @@ version 0.003
 
 =head3 L<Module::Install::ExtraTests>
 
+=head3 L<multidimensional>
+
 =head3 L<Perl::Version> 1.010
 
 =head3 L<Pod::Coverage::TrustPod>
+
+=head3 L<Pod::Weaver::PluginBundle::AMD>
 
 =head3 L<Test::Aggregate>
 
@@ -122,6 +130,8 @@ version 0.003
 
 =head3 L<DateTime::Format::MySQL>
 
+=head3 L<DateTime::Format::Pg>
+
 =head3 L<DateTime::Format::Natural>
 
 =head3 L<DateTime::Format::Strptime>
@@ -129,6 +139,8 @@ version 0.003
 =head3 L<DBD::mysql>
 
 =head3 L<DBD::SQLite>
+
+=head3 L<DBD::Pg>
 
 =head3 L<DBI>
 

@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921'
 license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -31,6 +31,7 @@ requires:
   Carp::Always: 0
   Carp::Always::Color: 0
   Carp::REPL: 0
+  DBD::Pg: 0
   DBD::SQLite: 0
   DBD::mysql: 0
   DBI: 0
@@ -46,6 +47,7 @@ requires:
   DateTime::Format::Mail: 0
   DateTime::Format::MySQL: 0
   DateTime::Format::Natural: 0
+  DateTime::Format::Pg: 0
   DateTime::Format::Strptime: 0
   Devel::Backtrace: 0
   Devel::Cover: 0
@@ -130,83 +132,86 @@ requires:
   YAML: 0
   YAML::Syck: 0
   YAML::XS: 0
+  bareword::filehandles: 0
+  indirect: 0
+  multidimensional: 0
   strict: 0
   warnings: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-AMD
   homepage: http://metacpan.org/release/Task-BeLike-AMD
   repository: git://github.com/amd/Task-BeLike-AMD.git
-version: 0.003
+version: 0.004
 x_Dist_Zilla:
   plugins:
     -
       class: Dist::Zilla::Plugin::GatherDir
       name: '@AMD/GatherDir'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::PruneCruft
       name: '@AMD/PruneCruft'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::ManifestSkip
       name: '@AMD/ManifestSkip'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::MetaYAML
       name: '@AMD/MetaYAML'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::Readme
       name: '@AMD/Readme'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::ExtraTests
       name: '@AMD/ExtraTests'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::ExecDir
       name: '@AMD/ExecDir'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::ShareDir
       name: '@AMD/ShareDir'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::MakeMaker
       name: '@AMD/MakeMaker'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::Manifest
       name: '@AMD/Manifest'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::TestRelease
       name: '@AMD/TestRelease'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::ConfirmRelease
       name: '@AMD/ConfirmRelease'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@AMD/UploadToCPAN'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::MetaConfig
       name: '@AMD/MetaConfig'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::MetaJSON
       name: '@AMD/MetaJSON'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::PkgVersion
       name: '@AMD/PkgVersion'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::PodSyntaxTests
       name: '@AMD/PodSyntaxTests'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::NoTabsTests
       name: '@AMD/NoTabsTests'
@@ -214,11 +219,11 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::PodCoverageTests
       name: '@AMD/PodCoverageTests'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::MetaResources
       name: '@AMD/MetaResources'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::Authority
       name: '@AMD/Authority'
@@ -234,7 +239,11 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: '@AMD/AutoPrereqs'
-      version: 4.300016
+      version: 4.300020
+    -
+      class: Dist::Zilla::Plugin::Git::Describe
+      name: '@AMD/Git::Describe'
+      version: 0.001
     -
       class: Dist::Zilla::Plugin::CheckChangesHasContent
       name: '@AMD/CheckChangesHasContent'
@@ -242,7 +251,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::NextRelease
       name: '@AMD/NextRelease'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch
       name: '@AMD/Git::CheckFor::CorrectBranch'
@@ -270,30 +279,30 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':IncModules'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':TestFiles'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':ExecFiles'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':ShareFiles'
-      version: 4.300016
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':MainModule'
-      version: 4.300016
+      version: 4.300020
   zilla:
     class: Dist::Zilla::Dist::Builder
     config:
       is_trial: 0
-    version: 4.300016
+    version: 4.300020
 x_authority: cpan:AMD
