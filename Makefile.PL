@@ -119,8 +119,8 @@ my %WriteMakefileArgs = (
     "TAP::Formatter::HTML" => 0,
     "TAP::Parser::Aggregator" => 0,
     "Task::Catalyst" => 0,
+    "Task::Moose" => 0,
     "Task::Pinto" => 0,
-    "Task::SDK::Moose" => 0,
     "Template" => 0,
     "Term::ReadLine::Gnu" => 0,
     "Term::ReadLine::Perl" => 0,
@@ -146,7 +146,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "4.1.0",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -2,13 +2,13 @@ use strict;
 use warnings;
 
 package Task::BeLike::AMD;
-# git description: v0.003-3-g0e8b077
+# git description: v0.004-2-g9581580
 
 BEGIN {
   $Task::BeLike::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Task::BeLike::AMD::VERSION = '0.004';
+  $Task::BeLike::AMD::VERSION = '4.1.0';
 }
 # ABSTRACT: Modules AMD uses
 
@@ -24,7 +24,7 @@ Task::BeLike::AMD - Modules AMD uses
 
 =head1 VERSION
 
-version 0.004
+version 4.1.0
 
 =head1 TASK CONTENTS
 
@@ -46,7 +46,7 @@ version 0.004
 
 =head2 Optional Dependencies Of Other Modules
 
-=head3 L<Task::SDK::Moose>
+=head3 L<Task::Moose>
 
 =head3 L<Term::ReadLine::Gnu>
 
